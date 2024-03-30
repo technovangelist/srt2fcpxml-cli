@@ -33,7 +33,7 @@ $ srt2subtitles --help
 
 # Complete Workflow
 
-*Install MacWhisper from https://goodsnooze.gumroad.com/l/macwhisper. You don't need PRO, unless you want the larger more accurate models. *
+*Install MacWhisper from https://goodsnooze.gumroad.com/l/macwhisper. You don't need PRO, unless you want the larger more accurate models.*
 
 1. Export the audio of your Final Cut Pro project
 1. Load the audio file into MacWhisper
