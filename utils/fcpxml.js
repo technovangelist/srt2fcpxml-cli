@@ -43,15 +43,15 @@ export default function fcpxml(srt_path, fps, destination_path) {
   format.att('id', 'r1')
   format.att('name', `FFVideoFormat1080p${hundredfold_fps}`)
   format.att('frameDuration', `100/${hundredfold_fps}`)
-  format.att('width', '1920')
-  format.att('height', '1080')
+  format.att('width', '1080')
+  format.att('height', '1920')
   format.att('colorSpace', '1-1-1 (Rec. 709)')
 
   // effect tag
   const effect = resources.ele('effect')
   effect.att('id', 'r2')
   effect.att('name', 'Basic Title')
-  effect.att('uid', '.../Titles.localized/Bumper:Opener.localized/Basic Title.localized/Basic Title.moti')
+  effect.att('uid', '~/Titles.localized/Build In:Out.localized/Custom copy/Custom copy.moti')
 
   // library tag
   const library = fcpxml.ele('library')
@@ -107,19 +107,19 @@ export default function fcpxml(srt_path, fps, destination_path) {
       // param tag
       const param1 = title.ele('param')
       param1.att('name', 'Position')
-      param1.att('key', '9999/999166631/999166633/1/100/101')
-      param1.att('value', '0 -465')
+      param1.att('key', '9999/10199/10201/1/100/101')
+      param1.att('value', '-269.32 -197.63')
 
       const param2 = title.ele('param')
-      param2.att('name', 'Flatten')
-      param2.att('key', '999/999166631/999166633/2/351')
-      param2.att('value', '1')
+      param2.att('name', 'Out Sequencing')
+      param2.att('key', '9999/10199/10201/4/10233/201/202')
+      param2.att('value', '0 (To)')
 
 
       const param3 = title.ele('param')
       param3.att('name', 'Alignment')
-      param3.att('key', '9999/999166631/999166633/2/354/999169573/401')
-      param3.att('value', '1 (Center)')
+      param3.att('key', '9999/10199/10201/2/354/1002961760/401')
+      param3.att('value', '0 (Left)')
 
 
       // text tag
@@ -135,10 +135,10 @@ export default function fcpxml(srt_path, fps, destination_path) {
 
       // text style 2 tag
       const text_style_2 = text_style_def.ele('text-style')
-      text_style_2.att('font', 'Helvetica')
+      text_style_2.att('font', 'Roboto')
       text_style_2.att('fontSize', '45')
-      text_style_2.att('fontFace', 'Regular')
-      text_style_2.att('fontColor', '1 1 1 1')
+      text_style_2.att('fontFace', 'Black')
+      text_style_2.att('fontColor', '1 1 0.335838 1')
       text_style_2.att('bold', '1')
       text_style_2.att('shadowColor', '0 0 0 0.75')
       text_style_2.att('shadowOffset', '4 315')

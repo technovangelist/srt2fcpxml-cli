@@ -31,3 +31,17 @@ $ srt2subtitles --help
 <img src="fcpx-project-screenshot.png">
 
 
+# Complete Workflow
+
+*Install MacWhisper from https://goodsnooze.gumroad.com/l/macwhisper. You don't need PRO, unless you want the larger more accurate models. *
+
+1. Export the audio of your Final Cut Pro project
+1. Load the audio file into MacWhisper
+    
+    a. I updated the Advanced Settings to Limit Length of Segments to 17 characters max
+
+1. It's easiest to edit the script here. Go through the content to make sure it makes sense. If there is a word that gets recognized wrong, update Settings > Find & Replace with the word or phrase.
+1. Click the Export button and choose to export an srt file.
+1. Run the srt thru this executable, srt2subtitles
+1. Import it into Final Cut, then copy the titles into your project.  
+
